@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hueman\n"
+"POT-Creation-Date: 2015-02-06 14:15+0100\n"
+"PO-Revision-Date: 2015-02-06 14:16+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:14
+msgid ""
+"The page you are trying to reach does not exist, or has been moved. Please "
+"use the menus or the search box to find what you are looking for."
+msgstr ""
+"Trang web không tồn tại hoặc đã bị xoá. Hãy tìm kiếm bài viết mà bạn muốn bằng thanh menu hoặc thanh tìm kiếm."
+
+#: ../comments.php:7
+msgid "No Responses"
+msgstr "Chưa có phản hồi nào"
+
+#: ../comments.php:7
+msgid "1 Response"
+msgstr "Có 1 phản hồi"
+
+#: ../comments.php:7
+msgid "% Responses"
+msgstr "% phản hồi"
+
+#: ../comments.php:10
+msgid "Comments"
+msgstr ""
+
+#: ../comments.php:11
+msgid "Pingbacks"
+msgstr "Ping trở "
+
+#: ../footer.php:76
+msgid "All Rights Reserved."
+msgstr "Sỡ hửu tất cả mọi quyền."
+
+#: ../footer.php:82
+msgid "Powered by"
+msgstr "Được cung cấp bởi"
+
+#: ../footer.php:82
+msgid "Theme by"
+msgstr "Theme của"
+
+#: ../search.php:10
+msgid "For the term"
+msgstr "Đối với thuật ngữ"
+
+#: ../search.php:12
+msgid "Please try another search:"
+msgstr "Hãy thử tìm kiếm lần nữa:"
+
+#: ../searchform.php:3
+msgid "To search type and hit enter"
+msgstr "Gõ từ khoá để tìm kiềm và nhấn enter"
+
+#: ../sidebar-2.php:5 ../sidebar.php:9
+msgid "Expand Sidebar"
+msgstr "Mở rông Menu"
+
+#: ../sidebar-2.php:11
+msgid "More"
+msgstr "Thông Tin Khác"
+
+#: ../sidebar.php:15
+msgid "Follow:"
+msgstr "Mạng xã hội:"
+
+#: ../single.php:14
+msgid "by"
+msgstr "bởi"
+
+#: ../single.php:23
+msgid "Pages:"
+msgstr "Trang"
+
+#: ../single.php:35
+msgid "Tags:"
+msgstr "Tags:"
+
+#: ../functions/widgets/alx-tabs.php:27
+msgid "Recent Posts"
+msgstr "Bài viết gần nhất"
+
+#: ../functions/widgets/alx-tabs.php:28
+msgid "Popular Posts"
+msgstr "Bài viết nổi bật"
+
+#: ../functions/widgets/alx-tabs.php:29
+msgid "Recent Comments"
+msgstr "Comment gần nhất"
+
+#: ../functions/widgets/alx-tabs.php:30
+msgid "Tags"
+msgstr "Tags"
+
+#: ../functions/widgets/alx-tabs.php:187
+msgid "says:"
+msgstr "nói:"
+
+#: ../inc/page-title.php:23
+msgid "Search result"
+msgstr "Kết quả tìm kiếm"
+
+#: ../inc/page-title.php:25
+msgid "Search results"
+msgstr "Những kết quả tìm kiếm"
+
+#: ../inc/page-title.php:31
+msgid "Error 404."
+msgstr "Lỗi 404."
+
+#: ../inc/page-title.php:31
+msgid "Page not found!"
+msgstr "Trang web không được tìm thấy!"
+
+#: ../inc/page-title.php:35
+msgid "Author:"
+msgstr "Tác giả:"
+
+#: ../inc/page-title.php:38
+msgid "Category:"
+msgstr "Chuyên Mục:"
+
+#: ../inc/page-title.php:41
+msgid "Tagged:"
+msgstr "Đã Tag:"
+
+#: ../inc/page-title.php:44
+msgid "Daily Archive:"
+msgstr "Bài viết hàng ngày:"
+
+#: ../inc/page-title.php:47
+msgid "Monthly Archive:"
+msgstr "Bài viết hàng tháng:"
+
+#: ../inc/page-title.php:50
+msgid "Yearly Archive:"
+msgstr "Bài viết hàng năm:"
+
+#: ../inc/post-nav.php:3
+msgid "Next story"
+msgstr "Bài sau"
+
+#: ../inc/post-nav.php:4
+msgid "Previous story"
+msgstr "Bài trước"
+
+#: ../inc/related-posts.php:6
+msgid "You may also like..."
+msgstr "Có lẽ bạn sẽ thích..."
+
+#: ../inc/sharrre.php:2
+msgid "Share"
+msgstr "Chia sẻ"
+
+#: wp-includes/comment-template.php:1642 wp-includes/comment-template.php:2235
+#: wp-includes/theme-compat/comments.php:68
+msgid "Leave a Reply"
+msgstr "Trả lời"
+
+#: wp-includes/comment-template.php:1643 wp-includes/comment-template.php:2236
+#: wp-includes/theme-compat/comments.php:68
+msgid "Leave a Reply to %s"
+msgstr "Trả lời tới %s"
+
+#: wp-includes/comment-template.php:2238
+msgid "Post Comment"
+msgstr "Gởi hản hồi"
+
+msgid "New Articles"
+msgstr "Bài viết mới"
+
+#. translators: revision date format, see http:php.net/date
+#: wp-includes/post-template.php:1725 wp-includes/post-template.php:1761
+msgctxt "revision date format"
+msgid "F j, Y @ H:i:s"
+msgstr "Ngày j F, Y @ H:i:s"
+
+msgid "Archives"
+msgstr "Tài liệu lưu trữ"
+
+msgid "Categories"
+msgstr "Chuyên Mục"
+
+msgid "Calendar"
+msgstr "Lịch bài viết"
+
+msgid "What 's Hot?"
+msgstr "Bài viết đang HOT"
+
+msgid "Hightlight"
+msgstr "Bài viết được quan tâm"
