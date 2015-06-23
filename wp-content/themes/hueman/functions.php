@@ -118,6 +118,7 @@ if ( ! function_exists( 'alx_scripts' ) ) {
 	
 	function alx_scripts() {
 		wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider.min.js', array( 'jquery' ),'', false );
+        wp_enqueue_script( 'sharrre', get_template_directory_uri() . '/js/jquery.sharrre.min.js', array( 'jquery' ),'', false );
 		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ),'', true );
 		if ( is_singular() && get_option( 'thread_comments' ) )	{ wp_enqueue_script( 'comment-reply' ); }
 	}  
@@ -830,8 +831,87 @@ function alx_deregister_styles() {
 }
 add_action( 'wp_print_styles', 'alx_deregister_styles', 100 );
 
-/* Remove top bar*/
+/* Remove top bar and other unnecessory meta */
+remove_action( 'wp_head', 'wp_generator' ) ;
+remove_action( 'wp_head', 'wlwmanifest_link' ) ;
+remove_action( 'wp_head', 'rsd_link' ) ;
+remove_action( 'wp_head', 'feed_links', 2 );
+remove_action( 'wp_head', 'feed_links_extra', 3 );
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+
 function my_function_admin_bar(){
     return false;
 }
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
+
+/* Other Settings */
+// remove the html from comment
+add_filter( 'pre_comment_content', 'esc_html' );
+
+// remove hint in password
+function no_wordpress_errors(){
+    return 'Sorry! You are not owner of this site.';
+}
+add_filter( 'login_errors', 'no_wordpress_errors' );
+
+// stop wordpress from guessing url
+function stop_guessing($url) {
+    if (is_404()) {
+        return false;
+    }
+    return $url;
+}
+add_filter('redirect_canonical', 'stop_guessing');
+
+/* Shortcode function */
+function sc_dropcap($atts, $content=null) {
+    return "<span class='dropcap'>$content</span>";
+}
+add_shortcode('dropcap', 'sc_dropcap');
+
+function sc_pullquote_right($atts, $content = null) {
+    return "<span class='pullquote-right'>$content</span>";
+}
+add_shortcode('pullquote-right', 'sc_pullquote_right');
+
+function sc_pullquote_left($atts, $content = null) {
+    return "<span class='pullquote-left'>$content</span>";
+}
+add_shortcode('pullquote-left', 'sc_pullquote_left');
+
+function sc_divider($atts, $content = null) {
+    return "<div class='hr'></div>";
+}
+add_shortcode('hr', 'sc_divider');
+
+function sc_highlight($atts, $content = null) {
+    return "<span class='highlight'>$content</span>";
+}
+add_shortcode('highlight', 'sc_highlight');
+
+function sc_column($atts, $content = null) {
+    // set deafult values
+    extract(shortcode_atts(array(
+        "size" => 'one-full',
+        "last" => 'false',
+        "title" => ''
+    ), $atts));
+
+    $columnClass = "grid $size";
+    if ($last == "true" || $size == "full") $columnClass .= " last";
+
+    if ($title != "") {
+        $content = "<h3>$title</h3><p>$content</p>";
+    } else {
+        $content = "<p>$content</p>";
+    }
+
+    $footer = "";
+    if ($last == "true") {
+        $footer = "<div class='clear'></div>";
+    }
+
+    return "<div class='$columnClass'>$content</div>$footer";
+}
+add_shortcode('column', 'sc_column');

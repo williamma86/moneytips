@@ -56,6 +56,8 @@
 	
 	<?php endif; ?>
 	
-	<?php if ( comments_open() ) { comment_form(); } ?>
+	<?php if ( comments_open() ) {
+        comment_form();
+    } ?>
 
 </section><!--/#comments-->

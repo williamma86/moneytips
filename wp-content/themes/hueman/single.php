@@ -5,7 +5,6 @@
 	<?php get_template_part('inc/page-title'); ?>
 	
 	<div class="pad group">
-		
 		<?php while ( have_posts() ): the_post(); ?>
 			<article <?php post_class(); ?>>	
 				<div class="post-inner group">
@@ -17,11 +16,12 @@
 					
 					<div class="clear"></div>
 					
-					<div class="entry">	
+					<div class="entry share">
 						<div class="entry-inner">
 							<?php the_content(); ?>
 							<?php wp_link_pages(array('before'=>'<div class="post-pages">'.__('Pages:','hueman'),'after'=>'</div>')); ?>
 						</div>
+                        <?php get_template_part('inc/sharre'); ?>
 						<div class="clear"></div>				
 					</div><!--/.entry-->
 					

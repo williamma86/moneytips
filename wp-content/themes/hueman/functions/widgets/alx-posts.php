@@ -24,7 +24,7 @@ class AlxPosts extends WP_Widget {
 	public function widget($args, $instance) {
 		extract( $args );
 		$instance['title']?NULL:$instance['title']='';
-		$title = apply_filters('widget_title',$instance['title']);
+		$title = __(apply_filters('widget_title',$instance['title']), 'hueman');
 		$output = $before_widget."\n";
 		if($title)
 			$output .= $before_title.$title.$after_title;
