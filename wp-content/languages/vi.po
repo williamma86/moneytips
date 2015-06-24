@@ -4751,7 +4751,7 @@ msgstr "Hiện theo cấp bậc"
 msgid "Number of posts to show:"
 msgstr "Số bài viết hiển thị:"
 
-#. translators: comments widget: 1: comment author, 2: post link
+#. translators: comments widget: 1:  comment author, 2: post link
 #: wp-includes/default-widgets.php:912
 msgctxt "widgets"
 msgid "%1$s on %2$s"
