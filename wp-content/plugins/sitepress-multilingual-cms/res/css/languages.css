@@ -1,0 +1,175 @@
+/* line 3, ../scss/languages.scss */
+#icl_save_default_button, #icl_cancel_default_button, #icl_theme_localization {
+  display: none;
+}
+
+/* Wizard */
+/* line 9, ../scss/languages.scss */
+#icl_setup_wizard .icl_setup_wizard_step {
+  float: left;
+  width: 25%;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/* line 16, ../scss/languages.scss */
+#icl_setup_wizard_progress {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+}
+
+/* line 23, ../scss/languages.scss */
+#icl_setup_wizard_progress_bar {
+  height: 10px;
+  background-color: #777;
+}
+
+/* Wizard END */
+/* Color picker */
+/* line 32, ../scss/languages.scss */
+#colorPickerDiv {
+  z-index: 999;
+}
+/* line 33, ../scss/languages.scss */
+#colorPickerDiv a {
+  padding: 1px;
+  border-bottom: 0;
+  text-decoration: none;
+}
+/* line 37, ../scss/languages.scss */
+#colorPickerDiv a:hover {
+  padding: 1px;
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+/* Color picker END */
+/* line 49, ../scss/languages.scss */
+#icl_edit_languages_table input {
+  width: 70px;
+}
+/* line 52, ../scss/languages.scss */
+#icl_edit_languages_table .radio, #icl_edit_languages_table .file {
+  width: auto;
+}
+
+/* line 57, ../scss/languages.scss */
+#icl_edit_languages_info ul {
+  padding: 15px;
+  list-style: square inside;
+}
+
+/* line 62, ../scss/languages.scss */
+#icl_edit_languages_table td {
+  vertical-align: middle;
+}
+
+/* Wizard section */
+/* line 68, ../scss/languages.scss */
+.wpml-section-wizard-steps h3 {
+  color: #278ab7;
+}
+
+/* Wizard section END */
+/* Languages section */
+/* line 77, ../scss/languages.scss */
+.wpml-section-languages .selected {
+  font-weight: bold;
+}
+/* line 80, ../scss/languages.scss */
+.wpml-section-languages .available-languages, .wpml-section-languages .enabled-languages {
+  margin: 0 0 20px 0;
+}
+/* line 83, ../scss/languages.scss */
+.wpml-section-languages .available-languages {
+  overflow: hidden;
+}
+/* line 87, ../scss/languages.scss */
+.wpml-section-languages .enabled-languages li {
+  position: relative;
+}
+/* line 90, ../scss/languages.scss */
+.wpml-section-languages .enabled-languages input[type="radio"] {
+  /*position: absolute;*/
+  /*left: -18px;*/
+  display: none;
+}
+
+/* line 98, ../scss/languages.scss */
+.branch-3-8 .enabled-languages input[type="radio"] {
+  left: -22px;
+  top: 7px;
+}
+
+/* line 104, ../scss/languages.scss */
+.wpml-section-languages .available-languages li {
+  display: inline-block;
+  width: 170px;
+}
+/* line 107, ../scss/languages.scss */
+.wpml-section-languages .available-languages li:hover {
+  color: #21759b;
+  font-weight: bold;
+}
+/* line 112, ../scss/languages.scss */
+.wpml-section-languages .inactive-content-table {
+  width: auto;
+}
+/* line 114, ../scss/languages.scss */
+.wpml-section-languages .inactive-content-table td {
+  text-align: right;
+}
+/* line 117, ../scss/languages.scss */
+.wpml-section-languages .inactive-content-table tfoot td {
+  font-weight: bold;
+}
+
+/* Languages section END */
+/* URL format */
+/* line 127, ../scss/languages.scss */
+.wpml-section-url-format ul table {
+  margin: 10px 0;
+}
+
+/* URL format END */
+/* Language switcher */
+/* line 137, ../scss/languages.scss */
+.language-selector-preview {
+  float: right;
+  padding: 0 15px;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+
+/* line 144, ../scss/languages.scss */
+.language-selector-preview-footer {
+  float: none;
+  padding: 15px;
+  min-height: 80px;
+  height: auto;
+}
+
+/* line 151, ../scss/languages.scss */
+.wpml-section-language-switcher .languages-order {
+  overflow: hidden;
+}
+/* line 153, ../scss/languages.scss */
+.wpml-section-language-switcher .languages-order li {
+  float: left;
+  margin: 0 8px 0 0;
+  padding: 2px 8px;
+  border: 1px solid #DFDFDF;
+  border-radius: 2px;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VjZWNlYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==') repeat scroll 0 0 #F1F1F1;
+  background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ececec), color-stop(100%, #f9f9f9)) repeat scroll 0 0 #F1F1F1;
+  background: -moz-linear-gradient(bottom, #ececec, #f9f9f9) repeat scroll 0 0 #F1F1F1;
+  background: -webkit-linear-gradient(bottom, #ececec, #f9f9f9) repeat scroll 0 0 #F1F1F1;
+  background: linear-gradient(to top, #ececec, #f9f9f9) repeat scroll 0 0 #F1F1F1;
+  cursor: move;
+}
+
+/* Language switcher END */
+
+/*# sourceMappingURL=languages.css.map */

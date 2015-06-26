@@ -1,0 +1,47 @@
+<?php
+
+  if(version_compare(phpversion(), '5', '<')){
+      add_action('admin_notices', 'icl_php_version_warn');
+      add_action('admin_print_scripts', 'icl_php_version_warn_js');
+      
+      function icl_php_version_warn(){
+          echo '<div class="error"><ul><li><strong>';
+          echo __('WPML cannot be activated because your version of PHP is too old. To run correctly, you must have PHP5 installed.<br /> We recommend that you contact your hosting company and request them to switch you to PHP5.', 'sitepress');
+          echo sprintf('<br />PHP reports version %s -  (<a href="#phpinfo">show detailed phpinfo</a>)',phpversion());
+          echo '</strong></li></ul>';     
+          echo '<div id="phpinfo_container"></div>';               
+          echo '</div>';
+      }
+      
+      icl_suppress_activation();
+      define('PHP_VERSION_INCOMPATIBLE', true);    
+      
+      function icl_php_version_warn_js(){
+        ?>
+        <script type="text/javascript">        
+        addLoadEvent(function(){
+            jQuery('a[href="#phpinfo"]').click(function(){                
+                
+                var pleft = (jQuery('body').width() - 700)/2;
+                jQuery('#phpinfo_container').css('left', pleft+'px').css('top','30px');
+                
+                jQuery('#phpinfo_container').html('<div style="background-color:#fff;padding-right:10px;font-weight:bold;text-align:right;"><a href="#phpinfo-close"><?php echo __('Close', 'sitepress')?></a></div><iframe width="700" height="600" src="<?php echo ICL_PLUGIN_URL ?>/inc/php-version-check.php?icl_phpinfo=1">Loading...</iframe>')
+                jQuery('a[href="#phpinfo-close"]').click(function(){
+                    jQuery('#phpinfo_container').html('');
+                });                
+            });
+        });        
+        </script>        
+        <style type="text/css">
+        #phpinfo_container{
+            position:absolute;
+            top:10px;
+            z-index:1000;
+            border:1px solid #ccc;
+            margin:0 auto;
+        }
+        </style>
+        <?php          
+      }
+  }  
+?>
